@@ -7,3 +7,9 @@ edition = "2021"
 
 [dependencies]
 rand = "0.8.5"
+sqlx = { version = "0.5.9", features = ["runtime-async-std-native-tls", "sqlite"]}
+async-std = { version = "1.6", features = [ "attributes" ] }
+futures = "0.3.18"
+clap = { version = "4.1.4", features = ["derive"] }
+ring = "0.16.20"
+data-encoding = "2.3.3"
